@@ -22,11 +22,8 @@ function Products() {
             <div className="card-header head-card-bg-rainbow">
               <h6 className="font-weight-bold mb-0">Proyects</h6>
             </div>
-
-            <div className="card-body mt-19 col-lg-12">
-              {/* <Bar options={options} data={data} /> */}
-              <ListaUsuarios />
-            </div>
+            {/* <Bar options={options} data={data} /> */}
+            <ListaUsuarios />
           </div>
         </div>
       </div>

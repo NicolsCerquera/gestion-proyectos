@@ -7,7 +7,7 @@ function ListaUsuarios() {
   const [posts, setPosts] = useState([]);
   const [loading, setLoading] = useState(false);
   const [currentPage, setCurrentPage] = useState(1);
-  const [postsPerPage] = useState(10);
+  const [postsPerPage] = useState(12);
 
   useEffect(() => {
     const fetchPosts = async () => {
@@ -29,7 +29,7 @@ function ListaUsuarios() {
   const paginate = (pageNumber) => setCurrentPage(pageNumber);
   return (
     <>
-      <h1 className="text-primary mb-3">Usuarios</h1>
+      <h1 className="text-primary mb-3">s</h1>
       <Posts posts={currentPosts} loading={loading} />
       <Pagination
         postsPerPage={postsPerPage}
