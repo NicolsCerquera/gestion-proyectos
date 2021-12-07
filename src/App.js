@@ -1,51 +1,22 @@
-import React from "react";
-/* import imga from "./assets/unnamed.jpg" */
-/* import imga2 from "./assets/usuario.jpeg"; */
-/* import Tabla from "./components/Tabla.js" */
-
-import Cuerpo from "./components/Cuerpo";
-import NavSuperior from "./components/NavSuperior";
-import Titulo from "./components/Titulo.js";
-import CuadroInicio from "./components/CuadroInicio.js";
-
-import Sidebar from "./components/Sidebar";
-import CuerpoCaja2 from "./components/CuerpoCaja2";
-import CuerpoCaja3 from "./components/CuerpoCaja3";
-
-/* import MernVid from "./components/MernVid"; */
+import "./App.css";
+import Navbar from "./Components/Navbar";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+/* import "./Components/Navbar.css"; */
+import Home from "./pages/Home";
+import Projects from "./pages/Projects";
+import Users from "./pages/Users";
 
 function App() {
   return (
-    <div className="d-flex">
-      <Sidebar />
-      <div className="w-100">
-        <NavSuperior />
-        <div id="content">
-          <Titulo />
-          <CuadroInicio />
-          <section className="fondo-gris">
-            <Cuerpo />
-            <CuerpoCaja2 />
-            <CuerpoCaja3 />
-          </section>
-        </div>
-      </div>
-    </div>
-
-    /* <MernVid /> */
+    <>
+      <Navbar />
+      <Routes>
+        <Route exact path="/" element={<Home />}></Route>
+        <Route exact path="/users" element={<Users />}></Route>
+        <Route exact path="/projects" element={<Projects />}></Route>
+      </Routes>
+    </>
   );
 }
-
-/* <div className="container">
-      <div className="row ">
-        <nav className="navbar fixed-top navbar-dark bg-dark">
-          <div className="container-fluid">
-            <a href="/" className="navbar-brand">
-              Ubisoft<img src={imga} alt="/" width="50" height="40" className=""/>
-            </a>
-          </div>
-        </nav>
-      </div>
-    </div> */
 
 export default App;
