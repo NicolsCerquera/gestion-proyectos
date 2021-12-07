@@ -1,9 +1,9 @@
 import React from "react";
 
 function EscogerProyecto() {
-  function consultar() {
+  /* function consultar() {
     fetch("http://localhost:3000/proyectos/consultar").then();
-  }
+  } */
   return (
     <>
       <form action="">

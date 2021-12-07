@@ -1,5 +1,5 @@
 import React from "react";
-import EscogerProyecto from "../forms/EscogerProyecto";
+/* import EscogerProyecto from "../forms/EscogerProyecto"; */
 
 function Home() {
   return (
@@ -7,7 +7,7 @@ function Home() {
       <div className="container">
         <div className="row">
           <div className="col-12">
-            <EscogerProyecto />
+            {/* <EscogerProyecto /> */}
             <h2>.</h2>
           </div>
         </div>

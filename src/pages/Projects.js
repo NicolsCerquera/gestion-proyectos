@@ -1,4 +1,5 @@
 import React from "react";
+import ListaUsuarios from "../components/ListaUsuarios";
 
 function Products() {
   return (
@@ -24,6 +25,7 @@ function Products() {
 
             <div className="card-body mt-19 col-lg-12">
               {/* <Bar options={options} data={data} /> */}
+              <ListaUsuarios />
             </div>
           </div>
         </div>
