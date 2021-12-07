@@ -1,43 +1,39 @@
 import React from "react";
-import * as FaIcons from "react-icons/fa";
-import * as AiIcons from "react-icons/ai";
-import * as IoIcons from "react-icons/io";
+import {AiFillHome} from "react-icons/ai";
+import {FiUsers}  from "react-icons/fi";
+import { AiFillProject } from "react-icons/ai";
+import { BsListTask } from "react-icons/bs";
+import { HiDocumentReport } from "react-icons/hi";
 
 export const SidebarData = [
   {
     title: "Home",
     path: "/",
-    icon: <AiIcons.AiFillHome />,
+    icon: <AiFillHome/>,
     cName: "nav-text",
   },
   {
-    title: "Users",
+    title: "Usuarios",
     path: "/users",
-    icon: <IoIcons.IoIosPaper />,
+    icon: <FiUsers/>,
     cName: "nav-text",
   },
   {
-    title: "Projects",
+    title: "Projectos",
     path: "/projects",
-    icon: <FaIcons.FaCartPlus />,
+    icon: <AiFillProject/>,
     cName: "nav-text",
   },
   {
-    title: "Team",
-    path: "/team",
-    icon: <IoIcons.IoMdPeople />,
+    title: "Actividades",
+    path: "/activities",
+    icon: <BsListTask/>,
     cName: "nav-text",
   },
   {
-    title: "Message",
-    path: "/message",
-    icon: <FaIcons.FaEnvelopeOpenText />,
-    cName: "nav-text",
-  },
-  {
-    title: "Support",
+    title: "Reportes",
     path: "/support",
-    icon: <IoIcons.IoMdHelpCircle />,
+    icon: <HiDocumentReport/>,
     cName: "nav-text",
   },
 ];

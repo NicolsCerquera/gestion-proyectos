@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import { SidebarData } from "./SidebarData";
 import "./Navbar.css";
 import { IconContext } from "react-icons";
-import img2 from "../assets/Logo-dimensiones.png";
+import img2 from "../assets/ubilogo_h.png";
 
 function Navbar() {
   const [sidebar, setSidebar] = useState(false);
@@ -14,16 +14,16 @@ function Navbar() {
 
   return (
     <>
-      <IconContext.Provider value={{ color: "#000000" }}>
-        <nav className="navbar navbar-expand-lg">
-          <div className="container-fluid border border-top-0">
+      <IconContext.Provider value={{ color: "#FFFFFF" }}>
+        <nav className="navbar navbar-expand-lg bg-dark text-white">
+          <div className="container-fluid">
             <div className="d-flex justify-content-start">
               <Link to="#" className="menu-bars navbar-brand">
                 <FaIcons.FaBars onClick={showSidebar} />
               </Link>
             </div>
             <div className="d-flex justify-content-center">
-              <img src={img2} alt="" className="" />
+              <img src={img2} alt="" style={{width: '200px', height: '60px', marginRight: '570px' }}/>
 
               {/* <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
@@ -31,11 +31,11 @@ function Navbar() {
                 </li>
               </ul> */}
             </div>
-            <div className="d-flex justify-content-end">
+            {/* <div className="d-flex justify-content-end">
               <button className="btn btn-outline-success" type="submit">
                 Search
               </button>
-            </div>
+            </div> */}
           </div>
         </nav>
 
