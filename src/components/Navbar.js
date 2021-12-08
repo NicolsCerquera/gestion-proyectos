@@ -23,7 +23,11 @@ function Navbar() {
               </Link>
             </div>
             <div className="d-flex justify-content-center">
-              <img src={img2} alt="" style={{width: '200px', height: '60px', marginRight: '570px' }}/>
+              <img
+                src={img2}
+                alt=""
+                style={{ width: "200px", height: "60px", marginRight: "570px" }}
+              />
 
               {/* <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">

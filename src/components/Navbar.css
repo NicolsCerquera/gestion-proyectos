@@ -90,5 +90,5 @@ span {
 .cuadro-imagen {
   width: 250px;
   height: 300px;
-  background-color: red;
+  border: solid #060b26;
 }

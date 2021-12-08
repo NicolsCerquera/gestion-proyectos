@@ -1,13 +1,14 @@
-import React, { useState, useEffect } from "react";
-import Pagination from "../components/Pagination";
-import Posts from "../components/Posts";
+import React, { useEffect, useState } from "react";
 import axios from "axios";
 
-function ListaUsuarios() {
+import PostActividades from "./PostActividades";
+import PaginationActividades from "./PaginationActividades";
+
+function ListaActividades() {
   const [posts, setPosts] = useState([]);
   const [loading, setLoading] = useState(false);
   const [currentPage, setCurrentPage] = useState(1);
-  const [postsPerPage] = useState(12);
+  const [postsPerPage] = useState(10);
 
   useEffect(() => {
     const fetchPosts = async () => {
@@ -27,17 +28,18 @@ function ListaUsuarios() {
 
   // Change page
   const paginate = (pageNumber) => setCurrentPage(pageNumber);
+
   return (
-    <>
-      <h1 className="text-primary mb-3"></h1>
-      <Posts posts={currentPosts} loading={loading} />
-      <Pagination
+    <div className="container mt-5">
+      <h1 className="text-primary mb-3">Lista actividades</h1>
+      <PostActividades posts={currentPosts} loading={loading} />
+      <PaginationActividades
         postsPerPage={postsPerPage}
         totalPosts={posts.length}
         paginate={paginate}
       />
-    </>
+    </div>
   );
 }
 
-export default ListaUsuarios;
+export default ListaActividades;
