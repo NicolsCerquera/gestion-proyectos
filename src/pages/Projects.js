@@ -29,8 +29,13 @@ function Products() {
         </div>
 
         <div className="col-lg-12 col-md-12 pt-5">
-          {/* <Bar options={options} data={data} /> */}
-          <ListaUsuarios />
+          <div className="card rounded-0">
+            <div className="card-header head-card-bg-rainbow">
+              <h6 className="font-weight-bold mb-0">Proyects</h6>
+            </div>
+            {/* <Bar options={options} data={data} /> */}
+            <ListaUsuarios />
+          </div>
         </div>
       </div>
       <CrearProyectoFormNuevoModal open={modalProyectos} close={close} />

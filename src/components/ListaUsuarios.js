@@ -29,7 +29,7 @@ function ListaUsuarios() {
   const paginate = (pageNumber) => setCurrentPage(pageNumber);
   return (
     <>
-      <h1 className="text-primary mb-3"></h1>
+      <h1 className="text-primary mb-3">s</h1>
       <Posts posts={currentPosts} loading={loading} />
       <Pagination
         postsPerPage={postsPerPage}

@@ -1,6 +1,4 @@
 import React from "react";
-
-import CrearUsuarioForm from "../components/CrearUsuarioForm";
 import ListaUsuarios from "../components/ListaUsuarios";
 
 function Users() {
@@ -14,7 +12,9 @@ function Users() {
           <button className="btn btn-info rounded-pill me-3">
             search user
           </button>
-          <CrearUsuarioForm />
+          <button className="btn btn-success rounded-pill">
+            Create new user
+          </button>
         </div>
 
         <div className="col-lg-12 col-md-12 pt-5 bg-warning">
