@@ -1,8 +1,18 @@
-import React from "react";
-import CrearProyectoForm from "../components/CrearProyectoForm";
+import React, { useState } from "react";
+import CrearProyectoFormNuevoModal from "../components/CreateProyectoFromNuevoModal";
 import ListaUsuarios from "../components/ListaUsuarios";
+import { Button } from "react-bootstrap";
 
 function Products() {
+  const [modalProyectos, setModalProyectos] = useState(false);
+
+  const open = () => {
+    setModalProyectos(true);
+  };
+  const close = () => {
+    setModalProyectos(false);
+  };
+
   return (
     <div className="container">
       <div className="row pt-5">
@@ -13,7 +23,9 @@ function Products() {
           <button className="btn btn-info rounded-pill me-3">
             search proyect
           </button>
-          <CrearProyectoForm />
+          <Button variant="warning" onClick={open}>
+            Crear nuevo proyecto
+          </Button>
         </div>
 
         <div className="col-lg-12 col-md-12 pt-5">
@@ -21,6 +33,7 @@ function Products() {
           <ListaUsuarios />
         </div>
       </div>
+      <CrearProyectoFormNuevoModal open={modalProyectos} close={close} />
     </div>
   );
 }

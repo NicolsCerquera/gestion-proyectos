@@ -1,11 +1,13 @@
 import React from "react";
 import DoughnutChart from "../charts/DoughnutChart";
+/* import CreateProyectoFromNuevoModal from "../components/CreateProyectoFromNuevoModal"; */
 import ListaFases from "../components/ListaFases";
 /* import EscogerProyecto from "../forms/EscogerProyecto"; */
 
 function Home() {
   return (
     <>
+      {/* <CreateProyectoFromNuevoModal /> */}
       <div className="container">
         <div className="row">
           <div className="col-12">
